@@ -1,22 +1,28 @@
-*************Installation for linux************************ 
+
+
+1) Installation for Linux
+==========================
 
 To install kannada tex run shell script install.sh
 
 To uninstall kannada tex run shell script uninstall.sh
 
-***********************************************************
+Please check the path inside of install.sh and uninstall.sh before running the scripts.
 
-*************Installation for windows**********************
+
+2) Installation for Windows
+==============================
 
 To install kannada TeX for windows run install.bat batch file.
 
 To uninstall kannada tex run uninstall.bat batchfile.
 
-***********************************************************
+Please check the path inside of install.bat and uninstall.bat before running the scripts.
+
 
 *********************USAGE*********************************
 
 include \usepackage{kanlel} to activate kannada as default
 
-manual for kannadatex is manual.pdf and one example file is udaya.tex.
+See examples/manual.pdf and examples/udaya.tex.
 
