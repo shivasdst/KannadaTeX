@@ -1,0 +1,7 @@
+\ProvidesFile{ot1lel.fd}
+\DeclareFontFamily{OT1}{lel}{}
+\DeclareFontShape{OT1}{lel}{m}{n}{   <-> lelr7t}{}
+\DeclareFontShape{OT1}{lel}{m}{sl}{   <-> lelri7t}{}
+\DeclareFontShape{OT1}{lel}{bx}{n}{   <-> lelb7t}{}
+\DeclareFontShape{OT1}{lel}{bx}{sl}{   <-> lelbi7t}{}
+\endinput

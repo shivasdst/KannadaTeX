@@ -1,0 +1,7 @@
+\ProvidesFile{ot1ndi.fd}
+\DeclareFontFamily{OT1}{ndi}{}
+\DeclareFontShape{OT1}{ndi}{m}{n}{   <-> ndir7t}{}
+\DeclareFontShape{OT1}{ndi}{m}{sl}{  <-> ndiri7t}{}
+\DeclareFontShape{OT1}{ndi}{bx}{n}{  <-> ndib7t}{}
+\DeclareFontShape{OT1}{ndi}{bx}{sl}{ <-> ndibi7t}{}
+\endinput

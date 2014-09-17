@@ -1,0 +1,28 @@
+*************Installation for linux************************ 
+
+To install kannada tex run shell script insengkan.sh
+
+To uninstall kannada tex run shell script uninsengkan.sh
+
+***********************************************************
+
+*************Installation for windows**********************
+
+To install kannada TeX for windows run instktex.bat batch file.
+
+To uninstall kannada tex run uninktex.bat batchfile.
+
+***********************************************************
+
+*********************USAGE*********************************
+
+include \usepackage{kanlel} to activate kannada as default
+
+manual for kannadatex is manual.pdf and one example file is udaya.tex.
+
+
+Type1 fonts for kannada TeX/LaTeX are in kantype1 directory which 
+
+also contains readme file. You will need to install these type1 fonts
+
+for better rendering of PDF files. 

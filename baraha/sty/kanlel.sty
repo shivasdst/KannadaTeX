@@ -1,0 +1,84 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{kanlel}
+\DeclareOption{special-ottu}{%
+\def\Smx{Sx\kern0.23em\lower2pt\hbox{\check@mathfonts%
+                              \fontsize\sf@size\z@%
+                              \math@fontsfalse\selectfont mx}}
+\def\kyx{kx\kern0.17em\lower2pt\hbox{\check@mathfonts%
+                              \fontsize\sf@size\z@%
+                              \math@fontsfalse\selectfont yx}}
+\def\nyYx{nx\kern0.17em\lower2pt\hbox{\check@mathfonts%
+                              \fontsize\sf@size\z@%
+                              \math@fontsfalse\selectfont yx}\kern0.13em\lower2.8pt\hbox{\check@mathfonts%
+                              \fontsize\sf@size\z@%
+                              \math@fontsfalse\selectfont Y}}
+}
+\DeclareOption{kannum}{%
+\renewcommand{\theenumi}{\@kndswara\c@enumi}
+\renewcommand{\theenumii}{\@kndvyanjan\c@enumii}
+\renewcommand{\theenumiii}{\@kndavyanjan\c@enumiii}
+\renewcommand{\theenumiv}{\@arabic\c@enumiv}
+\def\kndswara#1{\expandafter\@kndswara\csname c@#1\endcsname}
+\def\@kndswara#1{%
+  \ifcase#1\or a\or A\or i\or I\or u\or U\or Qu\or QU\or e\or E\or
+   ai\or o\or O\or au\or aM\or aH \else\@ctrerr\fi}
+\def\kndvyanjan#1{\expandafter\@kndvyanjan\csname c@#1\endcsname}
+\def\@kndvyanjan#1{%
+  \ifcase#1\or ka\or Ka\or ga\or Ga\or kn\or ca\or Ca\or ja\or Ja\or cn\or
+   Ta\or Tha\or Da\or Dha\or Na\or ta\or tha\or da\or dha\or na \or pa\or Pa\or ba\or Ba\or ma \else\@ctrerr\fi}
+\def\kndavyanjan#1{\expandafter\@kndavyanjan\csname c@#1\endcsname}
+\def\@kndavyanjan#1{%
+ \ifcase#1\or ya\or ra\or la\or va\or Sha\or Sa\or sa\or ha\or La \else\@ctrerr\fi}%
+}
+\DeclareOption{enum-orig}{%
+\renewcommand\theenumi{\@arabic\c@enumi}
+\renewcommand\theenumii{\@alph\c@enumii}
+\renewcommand\theenumiii{\@roman\c@enumiii}
+\renewcommand\theenumiv{\@Alph\c@enumiv}
+\renewcommand\labelenumi{{\rm\theenumi.}}
+\renewcommand\labelenumii{{\rm(\theenumii)}}
+\renewcommand\labelenumiii{{\rm\theenumiii.}}
+\renewcommand\labelenumiv{{\rm\theenumiv.}}
+}
+\DeclareOption*{\message{UnKnown Option}}
+\ExecuteOptions{kannum}
+\ProcessOptions
+\renewcommand{\familydefault}{lel}
+\def\abstractname{sArAMsha}
+\def\appendixname{anubaMdha}
+\def\bibname{garxMthasUci}
+\def\ccname{nakaluparxti}
+\def\chaptername{adhAyxya}
+\def\contentsname{viSayasUci}
+\def\enclname{seVrikegaLu}
+\def\figurename{citarx}
+\def\headpagename{puTa}
+\def\indexname{anukarxmaNike}
+\def\listfigurename{citarxgaLa paTiTx}
+\def\listtablename{koVSaTxkagaLa paTiTx}
+\def\partname{BAga}
+\def\prefacename{mununxDi}
+\def\seename{noVDi}
+\def\refname{ulelxVKa}
+\def\tablename{koVSaTxka}
+\def\today{\ifcase\month\or
+janavari\or
+Pebarxvari\or
+mAcfR\or
+Epirxlf\or
+meV\or
+jUnf\or
+juleY\or
+AgasfTx\or 
+sepeTxMbarf\or 
+akoVTxbarf\or
+navaMbarf\or 
+DiseMbarf
+\fi\space\number\day, \number\year}
+
+\makeatletter
+\defaulthyphenchar=145
+\def\-{\discretionary{}{}{}}
+\makeatother
+\endinput
+

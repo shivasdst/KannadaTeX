@@ -1,0 +1,15 @@
+This is TeX, Version 3.1415926 (TeX Live 2013) (format=tex 2014.6.7)  4 AUG 2014 18:48
+**testfont
+(/usr/local/texlive/2013/texmf-dist/tex/plain/base/testfont.tex
+\m=\count26
+\n=\count27
+\p=\count28
+\dim=\dimen16
+\skewtrial=\count29
+
+
+Name of the font to test = lelr7t
+Now type a test command (\help for help):)
+*\table\end
+[1]
+Output written on testfont.dvi (1 page, 10212 bytes).
