@@ -21,9 +21,9 @@ Please check the path inside of install.bat and uninstall.bat before running the
 
 
 3) USAGE
-===================================
+================================
 
-include \usepackage{kanlel} to activate kannada as default
+include \usepackage{nudi} to activate kannada as default
 
 See examples/manual.pdf and examples/udaya.tex.
 
